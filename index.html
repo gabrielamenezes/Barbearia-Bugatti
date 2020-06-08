@@ -1,30 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Bugatti</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="img/jpg">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header id="home">
         <div class="caixa">
-            <img src="img/logo_clara.png">
+            <img src="img/logo_clara.png" class="logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
+        <nav class="wrap-menu">
+            <ul class="menu-list">
+                <li class="item-list"><a href="#home" class="link">Home</a></li>
+                <li class="item-list"><a href="#sobre" class="link">Sobre</a></li>
+                <li class="item-list"><a href="#sec-produtos" class="link">Produtos</a></li>
             </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2>Sobre a Barbearia Bugatti</h2>
-                <p>No coração da cidade a <strong>Barberia Bugatti</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2016, a Barbearia Bugatti já é destaque na cidade e conquista noovs clientes a cada dia. A missão é: <em>"Proporcionar auto-estima e qualidade de vida aos clientes"</em> profissionais experientes e antenados ás mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes  </p>
-            </section>
-        </main>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre" class="sobre-sec">
+            <div class="container">
+            <h2 class="sobre-title">Sobre a Barbearia Bugatti</h2>
+            <img  class="sobre-img" src="img/beneficios.jpg" alt="Barbeiro (Imagem Ilustrativa)">
+            <p class="sobre-txt"> No coração da cidade a <strong>Barberia Bugatti</strong> traz para o mercado o que há de melhor para o
+                seu cabelo e barba. Fundada em 2016, a Barbearia Bugatti já é destaque na cidade e conquista noovs
+                clientes a cada dia. A missão é: <em>"Proporcionar auto-estima e qualidade de vida aos clientes"</em>
+                profissionais experientes e antenados ás mudanças no mundo da moda. O atendimento possui padrão de
+                excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes </p>
+            </div>
+        </section>
+
+        <section id="sec-produtos">
+            <h2>Nossos produtos para você</h2>
+            <ul class="produtos">
+                <li>
+                    <h2>Cabelo</h2>
+                    <img src="img/cabelo.jpg" alt="Corte de Cabelo">
+                    <p class="produto-descricao">Na tesoura ou na máquina, como o cliente preferir</p>
+                    <p class="produto-preco">R$25,00</p>
+                </li>
+
+                <li>
+                    <h2>Barba</h2>
+                    <img src="img/barba.jpg" alt="Barba">
+                    <p class="produto-descricao"> Corte e desenho profissional de barba</p>
+                    <p class="produto-preco">R$25,00</p>
+                </li>
+
+                <li>
+                    <h2>Cabelo + Barba</h2>
+                    <img src="img/cabelo+barba.jpg" alt="Cabelo e Barba">
+                    <p class="produto-descricao">Pacote completo de cabelo e barba</p>
+                    <p class="produto-preco">R$40,00</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="img/logo_sem_fundo_preto.png" alt="Logo Preta" class="logo-footer">
+        <p class="txt-footer">&copy; Copyright - Barbearia Bugatti</p>
+    </footer>
 </body>
+
 </html>
