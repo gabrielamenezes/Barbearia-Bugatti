@@ -143,3 +143,56 @@ header {
     font-size: 13px;
     color: #222222;
 }
+
+#contato {
+    width: 100%;
+    background: #222222;
+}
+
+#contato form {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 0;
+    color: #f0f0f5;
+    display: flex;
+}
+
+form legend {
+    font-size: 2.0em;
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+form fieldset {
+    display: flex;
+    width: 60%;
+    margin:  0 auto;
+    flex-direction: column;
+}
+
+form fieldset input, textarea {
+    width: 100%;
+    padding: 0.5em 0.5em;
+    font-size: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: #4b4b4b;
+    outline: none;
+    border: none;
+    color: #b6b6b6;
+}
+
+form fieldset button {
+    width: 250px;
+    height: 58px;
+    text-align: center;
+    padding: 0.3em;
+    margin: 1em 0 1em auto; /*alinhamento a direito*/
+    font-size: 1.2em;
+    background: #222222;
+    border-radius: 10px;
+    outline: none; /*linha ao redor do input*/
+    border: #b6b6b6 solid 1px;
+    color: #f0f0f5;
+}
