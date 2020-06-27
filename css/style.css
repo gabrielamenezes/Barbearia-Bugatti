@@ -119,11 +119,11 @@ header {
 }
 
 .produto-descricao {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .produto-preco {
-    font-size: 22px;
+    font-size: 19px;
     font-weight: bold;
     margin-top: 10px;
 }
@@ -147,27 +147,39 @@ header {
 #contato {
     width: 100%;
     background: #222222;
+    color: #f0f0f5;
+}
+#contato .container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 3em 0;
+    margin: 0 auto;
+    width: 90%;
 }
 
-#contato form {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3em 0;
+#contato  h2 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 1.5em;
+}
+#contato .container form {
+    width: 48%;
+    margin-right: 2%;
     color: #f0f0f5;
     display: flex;
 }
 
-form legend {
-    font-size: 2.0em;
+
+#contato .container form legend {
+    font-size: 1.4em;
     margin: 0 auto;
     padding-bottom: 1.5em;
 }
 
-form fieldset {
+form .container fieldset {
     display: flex;
-    width: 60%;
-    margin:  0 auto;
+    
     flex-direction: column;
 }
 
@@ -183,7 +195,7 @@ form fieldset input, textarea {
     color: #b6b6b6;
 }
 
-form fieldset button {
+#contato .container form fieldset button {
     width: 250px;
     height: 58px;
     text-align: center;
@@ -195,4 +207,22 @@ form fieldset button {
     outline: none; /*linha ao redor do input*/
     border: #b6b6b6 solid 1px;
     color: #f0f0f5;
+}
+#contato .container form fieldset button:hover {
+    background: #f0f0f5;
+    color: #222222;
+}
+table {
+    width: 48%;
+    margin-left: 2%;
+}
+
+thead {
+    background-color: #b6b6b6;
+}
+
+th, td {
+    border: solid 1px #000000;
+    padding: 8px 15px;
+    text-align: center;
 }
