@@ -81,11 +81,5 @@
     .main-content > #sec-produtos > .produtos > .item-list-product > img {
         width: 200px;
     }
-    #corpo #contato .container {
-        align-items: unset;
-        justify-content: center;
-        flex-direction: column;
-        
-    }
 }
 

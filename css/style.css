@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: #ffffff;
 }
 header {
@@ -94,23 +94,29 @@ header {
 .produtos {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .produtos li {
-    display: inline-block;
-    vertical-align: top;
+    background: linear-gradient(45deg, rgba(143,143,143,0.5), #8b8b8b8b), url(../img/fundo-card.jpg);
     width: 30%;
-    border: 2px solid #000000;
     text-align: center;
     height: 400px;
     padding: 30px 20px;
     border-radius: 10px;
-    margin: 0 1.5%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.1) ;
+    /* x y blur e espalhamento da sompra */
     box-sizing: border-box;
 }
 
+.produtos li img {
+    width: 220px;
+    height: 220px;
+}
 .produtos li:hover {
-    border-color: #c78c19;
+    transform: scale(1.1);
+    transition: transform 500ms ease;
 }
 
 .produtos h2 {
@@ -119,13 +125,15 @@ header {
 }
 
 .produto-descricao {
-    font-size: 14px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .produto-preco {
-    font-size: 19px;
+    font-size: 22px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .footer {
