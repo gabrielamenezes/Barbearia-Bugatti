@@ -1,3 +1,4 @@
+/* flex = o que eu quero alinhar? */
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #ffffff;
@@ -10,23 +11,23 @@ header {
     height: 400px;
 }
 .caixa {
-    position: relative;
-    width: 90%;
-    max-width: 1100px;
+     display: flex; /*alinhamento dos itens da caixa: menu e logo */
+    width: 100%;
+     max-width: 1100px; /*para o margin 0 auto funcionar: 100% de 1100px */
+    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
 .logo {
     width: 300px;
 }
 .menu-list {
-    position: absolute;
-    right: 0;
-    top: 170px;
-    padding: 0 40px;
+    display: flex;
 }
 
 .menu-list > .item-list {
-    display: inline-block;
+    /* display: inline-block; */
+    /* menu-list com display flex, não precisa de inline-block */
     text-transform: uppercase;
     margin-left: 15px;
 
@@ -46,29 +47,32 @@ header {
 #sobre {
     width: 100%;
     background: #222222;
+    padding: 3em 0;
+    
 }
 
-#sobre .container > .sobre-title {
+.sobre-title {
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 5%;
+    background-color: #222222;
+    padding-bottom: 40px;
     color: #f0f0f0f5;
     font-weight: bold;
 }
 
-#sobre .container {
-    width: 90%;
+.container {
+    display: flex;
+    width: 100%;
     margin: 0 auto;
-    padding: 3em 0;
+    max-width: 1100px;
 }
 
-#sobre .container .sobre-txt {
-    padding: 0 3%;
+.sobre-txt {
+    padding: 0 2%;
     width: 50%;
-    display: inline-block;
-    vertical-align: top;
     font-size: 1.1em;
     box-sizing: border-box;
+    text-align: justify;
     line-height: 34px;
     color: #f0f0f0f5;
 }
@@ -76,7 +80,6 @@ header {
     width: 47%;
     height: auto;
     border-radius: 10px;
-    display: inline-block;
 }
 
 #sec-produtos {
@@ -90,9 +93,12 @@ header {
     color: #333333;
 
 }
-
+.produtos-list {
+    display: flex;
+    justify-content: center;
+}
 .produtos {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -136,46 +142,27 @@ header {
     margin-top: 15px;
 }
 
-.footer {
-    margin: 40px auto 0;
-    text-align: center;
-    background-color: #f0f0f0f5;
-    padding: 40px 0;
-}
-
-.footer > .logo-footer {
-    width: 250px;
-}
-
-.footer > .txt-footer {
-    font-size: 13px;
-    color: #222222;
-}
-
 #contato {
     width: 100%;
     background: #222222;
     color: #f0f0f5;
-}
-#contato .container {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
     padding: 3em 0;
-    margin: 0 auto;
-    width: 90%;
+    
 }
 
+#contato .container {
+    align-items: center;
+    width: 90%;
+}
 #contato  h2 {
     text-align: center;
     font-size: 2em;
-    padding-top: 1.5em;
+    padding-top: 1.2em;
 }
 #contato .container form {
     width: 48%;
     margin-right: 2%;
     color: #f0f0f5;
-    display: flex;
 }
 
 
@@ -187,7 +174,6 @@ header {
 
 form .container fieldset {
     display: flex;
-    
     flex-direction: column;
 }
 
@@ -208,6 +194,7 @@ form fieldset input, textarea {
     height: 58px;
     text-align: center;
     padding: 0.3em;
+    display: block;
     margin: 1em 0 1em auto; /*alinhamento a direito*/
     font-size: 1.2em;
     background: #222222;
@@ -233,4 +220,19 @@ th, td {
     border: solid 1px #000000;
     padding: 8px 15px;
     text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f0f0f0f5;
+    padding: 40px 0;
+}
+
+.footer > .logo-footer {
+    width: 250px;
+}
+
+.footer > .txt-footer {
+    font-size: 13px;
+    color: #222222;
 }
