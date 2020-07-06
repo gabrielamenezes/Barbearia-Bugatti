@@ -1,85 +1,97 @@
-
-@media screen and (max-width: 768px) {
-    .main-content > #sec-produtos > h2, 
-    .main-content > #sobre > .container .sobre-title {
-        font-size: 33px;
-        margin: 0 1em 5%;
+@media (max-width: 765px) {
+    #sobre .container {
+        flex-direction: column;
+        align-items: center;
     }
-
-    .main-content > #sobre > .container p {
-        display: block;
-        width: 90%;
-        margin: 1.2em auto;
-        text-align: justify;
-    }
-
-    .main-content > #sobre > .container > .sobre-img {
-        display: block;
+    .container>.sobre-img {
         width: 80%;
-        margin: 0 auto;
     }
-
-    .main-content > #sec-produtos > .produtos > .item-list-product {
-        display: block;
+    .container>.sobre-txt {
         width: 80%;
-        margin: 2em auto;
+        padding: 0;
+    }
+    .produtos .item-list-product img {
+        width: 80% !important;
+    }
+    #contato .container {
+        flex-direction: column;
+    }
+    #contato .container form {
+        width: 90% !important;
+    }
+    #contato .container table {
+        width: 90%
+    }
+    ;
+}
+
+@media (max-width: 740px) {
+    .produtos .item-list-product img {
+        width: 170px;
+    }
+    .container .produtos>.item-list-product>h2 {
+        font-size: 20px !important;
     }
 }
 
-@media (max-width: 425px) {
-    #corpo > #home .wrap-menu > .menu-list {
-        position: static;
-        text-align: center;
+@media (max-width: 660px) {
+    .sobre-sec .sobre-title {
+        font-size: 1.9rem;
     }
 
-    header .caixa {
-        position: static;
+    #sec-produtos  h2 {
+        font-size: 1.9rem !important;
+    }
+    #sec-produtos .produtos-list .container .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+    #sec-produtos .produtos-list .container .produtos li {
+        width: 80%;
+        margin-top: 10px;
     }
 
-    header .caixa img {
-        display: block;
-        margin: 0 auto;
-    }
-    #corpo > .main-content > #sec-produtos > .produtos > .item-list-product h2 {
-        font-size: 1.5rem !important;
-    }
+}
 
+@media (max-width: 460px) {
+    #home>.caixa {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .caixa .logo {
+        width: 250px;
+    }
+    .main-content>.sobre-title {
+        font-size: 1.5rem;
+    }
+    .main-content #sec-produtos>h2 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 375px) {
-    .main-content > #sec-produtos > h2, 
-    .main-content > #sobre > .container .sobre-title {
-        font-size: 24px;
+    .sobre-sec .sobre-title {
+        font-size: 1.5rem;
     }
-    .main-content > #sec-produtos > .produtos > .item-list-product {
-        width: 100%;
+
+    #sec-produtos  h2 {
+        font-size: 1.5rem !important;
+    }
+    #contato h2 {
+        padding-bottom: 1em;
+    }
+
+    #contato .container table {
+        width: 94%;
     }
 }
 
 @media (max-width: 320px) {
-    #corpo > #home .wrap-menu > .menu-list {
-        width: 100%;
-        padding: 0;
-    }
-
-    #corpo > #home .wrap-menu > .menu-list > .item-list > .link{
+    #contato .container fieldset legend h3 {
         font-size: 1.2rem;
     }
 
-    .main-content > #sobre > .container > .sobre-img {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .main-content > #sobre > .container p {
-        display: block;
-        width: 100%;
-        margin: 1.2em auto;
-        text-align: justify;
-    }
-
-    .main-content > #sec-produtos > .produtos > .item-list-product > img {
-        width: 200px;
+    #contato .container table {
+        width: 96%;
     }
 }
-
